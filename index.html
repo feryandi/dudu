@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <title>Dari Untuk Dengan Ucapan</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="/static/script.js"></script>
+  <link type="text/css" rel="stylesheet" href="/static/min.css">
+  <link type="text/css" rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+
+<div id="content">			
+  <div class="row">
+    <div id="side" class="col c3">
+      <div id="card--creator" class="card card-gray">
+        <div class="card--section"><span>Dari</span><p><input id="card--from" type="text"></p></div>
+        <div class="card--section"><span>Untuk</span><p><input id="card--to" type="text"></p></div>
+        <div class="card--section"><span>Dengan Ucapan</span><p><textarea id="card--message"></textarea></p></div>
+        <div class="card--creation">
+          <div class="card--color-pick">
+            <a href="#" class="color-pick card-purple" onclick="changeColor('purple')">__</a>
+            <a href="#" class="color-pick card-blue" onclick="changeColor('blue')">__</a>
+            <a href="#" class="color-pick card-green" onclick="changeColor('green')">__</a>
+            <a href="#" class="color-pick card-amber" onclick="changeColor('amber')">__</a>
+            <a href="#" class="color-pick card-red" onclick="changeColor('red')">__</a>
+            <a href="#" class="color-pick card-gray" onclick="changeColor('gray')">__</a>
+          </div>
+          <div class="card--submit">
+            <a class="btn btn-sm smooth" onclick="addCard()">KIRIM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="board" class="col c9">
+      <div class="card card-gray">
+        <div class="card--section"><strong>Tunggu sebentar,<br/>sedang mengambil kartu...</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

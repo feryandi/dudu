@@ -1,0 +1,152 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9em;
+  color: #333;
+}
+
+body {
+  background-color: #e6cca7;
+  background-image: url('/static/wood.jpg');
+  padding: 1em;
+}
+
+input {
+  height: 1.5em;
+  border: 1px solid #ccc;
+  padding: .5em;
+  background-color: white;
+}
+
+textarea {
+  min-height: 2em;
+  border: 1px solid #ccc;
+  padding: .5em;
+  resize: none;
+  background-color: white;
+}
+
+.row {
+  margin: 0;
+  overflow: visible;
+}
+
+.btn {
+  color: #333;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn:hover {
+  color: #eee;
+}
+
+#board .card:nth-child(odd) {
+  transform: rotate(4deg);
+  position: relative;
+  top: 4px;
+}
+
+#board .card:nth-child(even) {
+  transform: rotate(2deg);
+  position: relative;
+  top: 4px;
+}
+
+#board .card:nth-child(3n) {
+  transform: rotate(-3deg);
+  position: relative;
+  top: -4px;
+}
+
+#board .card:nth-child(6n) {
+  transform: rotate(6deg);
+  position: relative;
+  top: 4px;
+}
+
+#card--creator {
+  float: right;
+}
+
+.card {
+  float: left;
+  max-width: 25em;
+  padding: 1em;
+  margin: .5em;
+  border: 1px solid #ddd;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, .25);
+}
+
+.card:hover {
+  box-shadow: 1px 1px 16px rgba(0, 0, 0, .25);
+  z-index: 99;
+}
+
+.card--section {
+  padding: .35em;
+}
+
+.card--section > span {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.25);  
+  padding: .25em;
+}
+
+.card--section > p {
+  display: inline;
+  line-height: 1.7em;
+  padding: .35em;
+}
+
+.card--section > p > textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 5em;
+  width: 95%;
+  display: block;
+  margin-top: .35em;
+}
+
+.card--creation {
+  font-weight: 700;
+  text-align: right;
+}
+
+.card-red {
+  background-color: #F6C2D9;
+}
+
+.card-purple {
+  background-color: #E4DAE2;
+}
+
+.card-blue {
+  background-color: #A1C8E9;
+}
+
+.card-green {
+  background-color: #BCDFC9;
+}
+
+.card-amber {
+  background-color: #FFF69B;
+}
+
+.card-gray {
+  background-color: #EEEEEE;
+}
+
+.card--color-pick {
+  float: left;
+  margin: .75em .5em;
+}
+
+.card--submit {
+  float: right;
+}
+
+.color-pick {
+  color: #888;
+  border: 1px solid #888;
+  font-size: 1.25em;
+  margin-right: .5em;
+}
